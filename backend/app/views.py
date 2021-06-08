@@ -4,13 +4,8 @@ from rest_framework.response import Response
 from django.core.files.storage import FileSystemStorage
 from rest_framework import status
 from .models import *
-import blur_detector
-import cv2
 import cv2
 
-import base64
-from io import BytesIO
-from PIL import Image
 import os
 
 class Imagecheck(APIView):
